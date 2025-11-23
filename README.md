@@ -1,7 +1,3 @@
-아래는 네가 준 README 그대로 두고, **바뀐 점만 정리한 섹션을 추가**한 버전이야.
-(본문은 손 안 대고, 중간에 “업데이트 내용”만 끼워 넣었어.)
-
-````markdown
 # 🎮 도티 피하기
 
 📖 **프로젝트 소개 (Introduction)**
@@ -23,13 +19,13 @@
 * 장애물 낙하 속도 증가
 * 장애물 생성 주기 단축
 
-```text
+text
 elapsed_time = (현재 시간 - 시작 시간)
 
 player_speed      = 기본 속도 + elapsed_time / 10
 obstacle_speed    = 기본 낙하 속도 + elapsed_time / 8
 obstacle_add_rate = max(최소 값, 초기 생성 주기 - 경과 시간 비례 감소)
-````
+
 
 단순한 회피 게임이지만, 시간이 지날수록 손에 땀을 쥐는 **난이도 커브**를 느낄 수 있습니다.
 
@@ -57,11 +53,11 @@ obstacle_add_rate = max(최소 값, 초기 생성 주기 - 경과 시간 비례 
   * 혹은 `"오늘의 교훈: 휴식도 중요합니다."`
     와 같은 기본 메시지로 대체
 
-```python
+python
 response = requests.get("https://api.adviceslip.com/advice")
 data = response.json()
 lesson = data["slip"]["advice"]
-```
+
 
 게임을 망쳐(?)도 마지막에 하나쯤은 건져갈 수 있는, **작은 인생 조언 한 줄**.
 
@@ -73,9 +69,9 @@ lesson = data["slip"]["advice"]
 * 게임 종료 후 다시 실행해도 최고 점수가 유지됩니다.
 * 파일이 없거나 깨져있으면 자동으로 0점부터 시작
 
-```text
+text
 High Score: 1234
-```
+
 
 끊임없이 자신의 기록을 갱신하는 **기록형 게임 플레이**를 즐길 수 있습니다.
 
@@ -143,22 +139,22 @@ High Score: 1234
 
 ### 1. 저장소 클론
 
-```bash
+bash
 git clone [Repository URL]
 cd [Repository Name]
-```
+
 
 ### 2. 의존성 설치
 
-```bash
+bash
 pip install pygame requests
-```
+
 
 ### 3. 실행
 
-```bash
+bash
 python main.py
-```
+
 
 * `highscore.txt` 파일은 게임 실행 중 자동 생성됩니다.
 * Windows 환경에서는 `C:/Windows/Fonts/malgun.ttf` 폰트를 사용해 한글을 렌더링합니다.
