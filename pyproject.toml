@@ -1,0 +1,10 @@
+[project]
+name = "dotti-avoidance-game"
+version = "0.1.0"
+description = "Pygame-based dodging game with random advice"
+requires-python = ">=3.10"
+
+dependencies = [
+  "pygame",
+  "requests",
+]
